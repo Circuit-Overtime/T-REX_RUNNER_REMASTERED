@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head>
+    <title>T-REX RUNNER</title>
+    <link rel = "icon" href = "trex1.png" type = "image/x-icon">
+    <script src="p5.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+    <script>
+        $(document).bind("contextmenu",function(e){
+  return false;
+  swal("T-REX SAYS", "...Access Prohibited!");
+    });
+
+  
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                //alert('Access Prohibited');
+                swal("T-REX SAYS", "...Access Prohibited!");
+            }
+            return false;
+    };
+ /* function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+   
+    </script>
+<p class="credits"> This is a re-created version of Google's T-rex Runner by <strong> Ayushman Bhattacharya</strong></p>
+<p class="upgrade">More Changes will be Made Shortly </p>
+<p class="inst"> Press the Space Key or UP_ARROW (↑) to Jump. Try to escape the spawn island by doing parkour over the CACTI. Do not stumble over.. <br> <strong class="luck">Good Luck! </strong><br> <strong class="reset">Press Enter to Restart Again</strong></p>
+</body></html>
